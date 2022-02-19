@@ -1,0 +1,13 @@
+#!/bin/bash
+
+set -e
+
+#Automatic update conkyrc for all users
+for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
+do
+        cp -f /etc/skel/.conkyrc /home/$users/
+done
+
+cp -f /etc/skel/.conkyrc /root
+
+#DEBHELPER#
