@@ -1,0 +1,15 @@
+#!/bin/bash
+
+set -e
+
+if [[ "$1" = "purge" ]]; then
+	#Automatic update conkyrc for all users
+	for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
+	do
+        	rm -f /home/$users/.conkyrc
+	done
+
+	rm -f /root/.conkyrc
+fi
+
+#DEBHELPER#

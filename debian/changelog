@@ -1,5 +1,11 @@
+kaisen-conky (2.0+kaisen1) kaisen-packages; urgency=medium
+
+  * Add postrm script to remove .conkyrc for all users when --purge option is used
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Tue, 22 Feb 2022 19:14:38 +0100
+
 kaisen-conky (2.0) kaisen-packages; urgency=medium
 
   * New package for Kaisen Conky theme
 
- -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 18 Feb 2021 14:29:58 +0100
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Fri, 18 Feb 2022 14:29:58 +0100
