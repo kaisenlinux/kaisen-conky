@@ -1,2 +1,3 @@
 .conkyrc etc/skel
 kaisen-conky.desktop etc/xdg/autostart
+network-display usr/share/kaisen-conky

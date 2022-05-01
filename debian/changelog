@@ -1,3 +1,12 @@
+kaisen-conky (2.0+kaisen3) kaisen-packages; urgency=medium
+
+  * Network informations are now managed by the network-display script
+  * Add support not displaying wg* interfaces for Ethernet, WiFi and USB
+  * Update network entries
+  * Add support for VPN IPsec P2P in the VPN section
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Sun, 01 May 2022 02:57:32 +0100
+
 kaisen-conky (2.0+kaisen2) kaisen-packages; urgency=medium
 
   * Update comment in the debian/postrm file
