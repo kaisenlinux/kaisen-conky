@@ -31,12 +31,14 @@ function vpn() {
 ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v virbr | grep -v vnet | grep -v pan | grep -v brd > /dev/null
 	if [ $? -eq 0 ]; then
 	ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v virbr | grep -v vnet | grep -v pan | grep -v brd | cut -d \/ -f1 | awk '{ print $2 }'
+	exit 0
 	fi
 ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v wl | grep -v en | grep -v eth | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v usb | grep -v virbr | grep -v vnet | grep -v pan > /dev/null
 	if [ $? -eq 0 ]; then
 	ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v wl | grep -v en | grep -v eth | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v usb | grep -v virbr | grep -v vnet | grep -v pan | cut -d \/ -f1 | awk '{ print $2 }'
+	else
+	echo "Not connected"
 	fi
-	ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v virbr | grep -v vnet | grep -v pan | grep -v brd > /dev/null || ip a | grep inet | grep -vw lo | grep -v vmnet | grep -v wl | grep -v en | grep -v eth | grep -v inet6 | grep -v ppp | grep -v sl | grep -v ww | grep -v docker | grep -v br- | grep -v lxcbr | grep -v usb | grep -v virbr | grep -v vnet | grep -v pan > /dev/null || echo "Not connected"
 }
 
 function dns() {
