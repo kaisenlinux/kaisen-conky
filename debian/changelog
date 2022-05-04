@@ -1,3 +1,9 @@
+kaisen-conky (2.0+kaisen4) kaisen-packages; urgency=medium
+
+  * Inverting of Ethernet and WiFi logos
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Wed, 04 May 2022 19:30:43 +0100
+
 kaisen-conky (2.0+kaisen3) kaisen-packages; urgency=medium
 
   * Network informations are now managed by the network-display script

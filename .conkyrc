@@ -87,9 +87,9 @@ ${voffset -1}${goto 42}${color2}${top name 8}${color}${font Liberation Sans:styl
 ${voffset -1}${goto 42}${color2}${top name 9}${color}${font Liberation Sans:style=Bold:size=8}${color1} ${goto 126}${top cpu 9}${alignr}${top mem 9}${color}${font}
 ${voffset -1}${goto 42}${color2}${top name 10}${color}${font Liberation Sans:style=Bold:size=8}${color1} ${goto 126}${top cpu 10}${alignr}${top mem 10}${color}${font}
 # |--ETHERNET
-${voffset 2}${color0}${font ConkyColors:size=15}k${font}${color}${goto 32}${voffset -6}Ethernet: ${alignr}${exec /usr/share/kaisen-conky/network-display ethernet}
+${voffset 2}${color0}${font ConkyColors:size=15}b${font}${color}${goto 32}${voffset -6}Ethernet: ${alignr}${exec /usr/share/kaisen-conky/network-display ethernet}
 # |--WIFI
-${voffset 2}${color0}${font ConkyColors:size=15}b${font}${color}${goto 32}${voffset -6}WiFi: ${alignr}${exec /usr/share/kaisen-conky/network-display wifi}
+${voffset 2}${color0}${font ConkyColors:size=15}k${font}${color}${goto 32}${voffset -6}WiFi: ${alignr}${exec /usr/share/kaisen-conky/network-display wifi}
 # |--USB
 ${voffset 2}${color0}${font ConkyColors:size=15}d${font}${color}${goto 32}${voffset -6}USB: ${alignr}${exec /usr/share/kaisen-conky/network-display usb}
 # |--VPN
