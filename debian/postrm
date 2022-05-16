@@ -6,7 +6,7 @@ if [[ "$1" = "purge" ]]; then
 	#Automatic remove conkyrc for all users when kaisen-conky is purge
 	for users in $(awk -F: '/\/home/ {printf "%s:%s\n",$1,$3}' /etc/passwd | cut -d: -f1)
 	do
-        	rm -f /home/$users/.conkyrc
+        	rm -f /home/$users/.conkyrc 2> /dev/null || true
 	done
 
 	rm -f /root/.conkyrc
