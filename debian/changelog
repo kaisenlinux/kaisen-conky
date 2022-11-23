@@ -1,3 +1,9 @@
+kaisen-conky (2.2) kaisen-packages; urgency=medium
+
+  * Add the exclusion of the vboxnet* and veth* interfaces
+
+ -- Kevin Chevreuil - Kaisen <kaisen@kaisenlinux.org>  Thu, 24 Nov 2022 00:42:52 +0100
+
 kaisen-conky (2.1+kaisen1) kaisen-packages; urgency=medium
 
   * Add 2> /dev/null for the chown command in the postinst script
